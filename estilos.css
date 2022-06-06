@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(rgb(19, 18, 18, 0.70), rgba(19, 18, 18, 0.616)),
+      url('https://fondosmil.com/fondo/29366.jpg');
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #1d1d1d;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: #f1f1f1;
+  }
+  
+  /* Container for flexboxes */
+  .row {
+    display: -webkit-flex;
+    display: flex;
+  }
+  
+  /* Create three equal columns that sits next to each other */
+  .column {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 20px;
+    height: 50vh;
+    /* Should be removed. Only for demonstration */
+  }
+  
+  /* Style the footer */
+  .footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+  }
+  
+  table {
+    margin: auto;
+    padding: 10px;
+    border-collapse: collapse;
+    overflow: hidden;
+    text-align: center;
+    width: 90vw;
+  }
+  
+  th, thead th {
+      background: rgb(56, 49, 49);
+      align-items: center;
+      font-weight: 900;
+      color: #f1f1f1;
+  }
+  
+  th, td {
+      padding: 10px;
+      border-spacing: 0;
+      border-collapse: collapse;
+  }
+  
+  tbody tr:nth-child(odd) {
+      background: #ddd5d5;
+      color: #2b2b2b;
+      transition: all 200ms;
+  }
+  
+  tbody tr:nth-child(odd):hover {
+      background: #d4bebe;
+  }
+  
+  tbody tr:nth-child(even) {
+      background: #c7b1b1;
+      color: #2b2b2b;
+      transition: all 200ms;
+  }
+  
+  tbody tr:nth-child(even):hover {
+    background: #a88d8d;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .row {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
